@@ -1,0 +1,38 @@
+.ProyectTitle {
+  margin: 0 2rem;
+  font-size: 3.5rem;
+  letter-spacing: 1rem;
+}
+
+.ProyectDiv {
+  display: flex;
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.InfoProyectDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20%;
+  height: 35rem;
+  margin: 1% 4rem;
+}
+
+.TitleInfoProyect {
+}
+
+.TextInfoProyect {
+}
+
+.DivLinksProyect {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ImagenProvisoria {
+  width: 22rem;
+  height: 20rem;
+  margin: auto;
+  background-color: white;
+}

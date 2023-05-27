@@ -1,0 +1,16 @@
+.HomeMain {
+  height: 40rem;
+  margin: 0.777%;
+  padding: 1%;
+  border: 1px solid white;
+}
+
+.DivLogo {
+  position: absolute;
+  top: 12%;
+  left: 10%;
+}
+
+.H1Logo {
+  letter-spacing: 0.25rem;
+}

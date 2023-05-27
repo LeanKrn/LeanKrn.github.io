@@ -1,0 +1,35 @@
+.InfoMain {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.InfoTitle {
+  margin: 0 2rem;
+  font-size: 4.5rem;
+  letter-spacing: 2.7rem;
+}
+
+.InfoText {
+  font-size: 26px;
+  margin: 5rem 2rem;
+}
+
+.InfoDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.InfoImgDiv {
+  margin: auto;
+  width: 40rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.InfoImgDiv img {
+  width: 30rem;
+  height: 80%;
+}
