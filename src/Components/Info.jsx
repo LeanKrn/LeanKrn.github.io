@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import "../Styles/Info.css";
 import Lean2 from "../Images/Lean2.JPG";
 
