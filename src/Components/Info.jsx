@@ -1,28 +1,8 @@
 import React, { useState, useRef } from "react";
 import "../Styles/Info.css";
-// import Lean1 from "../Images/Lean1.JPG";
 import Lean2 from "../Images/Lean2.JPG";
 
 export const Info = () => {
-  // const carouselRef = useRef(null);
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [currentTranslate, setCurrentTranslate] = useState(0);
-  const [prevTranslate, setPrevTranslate] = useState(0);
-
-  // const handleDragStart = (e) => {
-  //   setIsDragging(true);
-  //   setStartX(e.pageX || e.touches[0].pageX);
-  //   setPrevTranslate(currentTranslate);
-  // };
-
-  // const handleDrag = (e) => {
-  //   if (!isDragging) return;
-  //   const x = e.pageX || e.touches[0].pageX;
-  //   const translate = prevTranslate + (x - startX);
-  //   setCurrentTranslate(translate);
-  // };
-
   return (
     <div className="HomeMain">
       <div className="InfoMain">
