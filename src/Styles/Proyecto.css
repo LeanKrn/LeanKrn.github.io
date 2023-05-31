@@ -7,22 +7,92 @@
 .ProyectDiv {
   display: flex;
   margin: 0 1rem;
-  overflow: hidden;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.ProyectDiv::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+.ProyectDiv::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.ProyectDiv::-webkit-scrollbar-thumb {
+  background-color: rgba(207, 207, 207, 0.2);
+  border-radius: 3px;
+}
+
+.ProyectDiv::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(151, 151, 151, 0.4);
+}
+
+.ProyectDiv::-webkit-scrollbar-thumb:horizontal {
+  min-width: 10px;
+}
+
+.ProyectDiv::-webkit-scrollbar-thumb:vertical {
+  min-height: 10px;
 }
 
 .InfoProyectDiv {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 20%;
-  height: 35rem;
+  width: 35%;
+  min-height: 50rem;
   margin: 1% 4rem;
+  transition: all 0.3s ease;
+}
+.DivHidden {
+  display: none;
+}
+.InfoProyectDiv:hover div {
+  display: flex;
+  animation: fadeIn 0.7s ease;
+  flex-direction: column;
 }
 
-.TitleInfoProyect {
+.InfoProyectDiv:hover .ImagenProvisoria {
+  display: none;
+}
+.InfoProyectDiv:not(:hover) div {
+  animation: fadeOut 0.5s ease;
 }
 
-.TextInfoProyect {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.FrontTec {
+  background-color: rgb(39, 39, 39);
+  padding: 3px;
+  border-radius: 5px;
+  margin: 4px;
+}
+.TecFrontDiv {
+  display: flex;
+  justify-content: space-around;
 }
 
 .DivLinksProyect {
@@ -32,7 +102,36 @@
 
 .ImagenProvisoria {
   width: 22rem;
-  height: 20rem;
+  height: 35rem;
   margin: auto;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ImagenProvisoria img {
+  width: 100%;
+  height: 33.3%;
+}
+
+.DivLinksProyect {
+  margin-top: 1rem;
+}
+.DivLinksProyect a {
+  background-color: aliceblue;
+  padding: 7px;
+  border-radius: 7px;
+  margin-top: 2px;
+  font-size: 1.2rem;
+  font-style: none;
+}
+
+@media (min-width: 601px) and (max-width: 1524px) {
+  .ProyectDiv {
+    flex-wrap: wrap;
+  }
+  .InfoProyectDiv {
+    width: 40%;
+  }
 }
