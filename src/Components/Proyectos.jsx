@@ -55,6 +55,17 @@ export const Proyectos = () => {
         "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150951_riwwhh.png",
       ],
     },
+    {
+      Title: "Essencia lagos",
+      Text: "Web site creado para dar informacion de una empresa brasilera de turismo y a su vez dar informacion sobre la historia de donde se localiza",
+      Front: ["React native", "Style Components"],
+      Demo: "essencialagos.com/",
+      image: [
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150920_ntatwj.png",
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150937_vmxhep.png",
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150951_riwwhh.png",
+      ],
+    },
   ];
   return (
     <div className="ProyectosMain">
@@ -64,7 +75,7 @@ export const Proyectos = () => {
           <div className="InfoProyectDiv">
             <div className="ImagenProvisoria">
               {Proyect.image.map((img) => (
-                <img src={img} />
+                <img alt={info.Title} src={img} />
               ))}
             </div>
             <div className="DivHidden">
@@ -97,12 +108,16 @@ export const Proyectos = () => {
                 </>
               ) : null}
               <div className="DivLinksProyect">
-                <a href={Proyect.Repository} target="_blank" rel="noreferrer">
-                  Respository
-                </a>
-                <a href={Proyect.Demo} target="_blank" rel="noreferrer">
-                  Demo
-                </a>
+                {Proyect.Repository ? (
+                  <a href={Proyect.Repository} target="_blank" rel="noreferrer">
+                    Respository
+                  </a>
+                ) : null}
+                {Proyect.Demo ? (
+                  <a href={Proyect.Demo} target="_blank" rel="noreferrer">
+                    Demo
+                  </a>
+                ) : null}
               </div>
             </div>
           </div>

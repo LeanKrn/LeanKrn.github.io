@@ -1,0 +1,29 @@
+.DivCont {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border: 1px solid white;
+  margin: 0.777%;
+  height: 20rem;
+  padding: 1%;
+}
+
+.h3Cont {
+  letter-spacing: 5px;
+}
+
+.LinkCont {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 601px) {
+  .h3Cont {
+    text-align: center;
+  }
+  .LinkCont {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}

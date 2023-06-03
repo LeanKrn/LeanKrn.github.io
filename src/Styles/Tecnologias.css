@@ -56,3 +56,30 @@
   height: 100%;
   margin: 0 100px;
 }
+
+@media (max-width: 601px) {
+  .TecTitle {
+    font-size: 1.5rem;
+    margin: 2rem 1rem;
+  }
+
+  .logos:before {
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5)
+    );
+  }
+
+  .logos:after {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5)
+    );
+  }
+
+  .logos-slide {
+    animation: 7s slide infinite linear;
+  }
+}

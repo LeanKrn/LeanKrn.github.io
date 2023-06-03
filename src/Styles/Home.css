@@ -14,3 +14,19 @@
 .H1Logo {
   letter-spacing: 0.25rem;
 }
+
+@media (max-width: 601px) {
+  .HomeMain {
+    width: 99%;
+    height: 50rem;
+    padding: 0;
+    margin: 0;
+  }
+  .DivLogo img {
+    width: 70%;
+  }
+  .H1Logo {
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+}

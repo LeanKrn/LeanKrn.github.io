@@ -7,6 +7,7 @@
 .ProyectDiv {
   display: flex;
   margin: 0 1rem;
+  justify-content: center;
   overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
@@ -41,10 +42,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 35%;
+  min-width: 7%;
+  width: 15%;
   min-height: 50rem;
-  margin: 1% 4rem;
+  margin: 1% 3rem;
   transition: all 0.3s ease;
+}
+.InfoProyectDiv:hover {
+  width: 27%;
 }
 .DivHidden {
   display: none;
@@ -127,11 +132,49 @@
   font-style: none;
 }
 
-@media (min-width: 601px) and (max-width: 1524px) {
+@media (min-width: 601px) and (max-width: 1700px) {
   .ProyectDiv {
-    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .InfoProyectDiv {
-    width: 40%;
+    width: 20%;
+    margin: 0;
+    transform: scale(0.75);
+  }
+  .ProyectDiv:hover .ImagenProvisoria {
+    transform: scale(0.75);
+    transition: all 1.5s ease-in;
+  }
+  .InfoProyectDiv:hover {
+    width: 30%;
+  }
+}
+
+@media (max-width: 601px) {
+  .ProyectTitle {
+    transform: scale(0.5);
+  }
+  .ProyectDiv {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+  .InfoProyectDiv {
+    width: 100%;
+    transform: scale(0.85);
+    min-height: 37rem;
+  }
+  .InfoProyectDiv:hover {
+    width: 100%;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 }
