@@ -11,9 +11,9 @@ export const Proyectos = () => {
       Repository: "https://github.com/LeanKrn/PI-Food-main",
       Demo: "",
       image: [
-        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150920_ntatwj.png",
-        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150937_vmxhep.png",
-        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150951_riwwhh.png",
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685886088/Captura_de_pantalla_2023-06-04_103919_b8xe5t.png",
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685886087/Captura_de_pantalla_2023-06-04_103935_ao6t5m.png",
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685886087/Captura_de_pantalla_2023-06-04_104029_tu47i5.png",
       ],
     },
     {
@@ -24,9 +24,9 @@ export const Proyectos = () => {
       Repository: "",
       Demo: "",
       image: [
-        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150920_ntatwj.png",
-        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150937_vmxhep.png",
-        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150951_riwwhh.png",
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685886196/Captura_de_pantalla_2023-06-04_104157_zyezii.png",
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685886197/Captura_de_pantalla_2023-06-04_104253_zr8qwc.png",
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685886196/Captura_de_pantalla_2023-06-04_104303_hpisnr.png",
       ],
     },
     {
@@ -50,9 +50,9 @@ export const Proyectos = () => {
       Repository: "https://github.com/LeanKrn/PokedexKRN",
       Demo: "",
       image: [
-        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150920_ntatwj.png",
-        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150937_vmxhep.png",
-        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150951_riwwhh.png",
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685886654/Captura_de_pantalla_2023-06-04_105016_aa7lz1.png",
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685886654/Captura_de_pantalla_2023-06-04_105000_v1hdfq.png",
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685886654/Captura_de_pantalla_2023-06-04_104944_sbtqu4.png",
       ],
     },
     {
@@ -61,9 +61,9 @@ export const Proyectos = () => {
       Front: ["React native", "Style Components"],
       Demo: "essencialagos.com/",
       image: [
-        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150920_ntatwj.png",
-        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150937_vmxhep.png",
-        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685556628/Captura_de_pantalla_2023-05-31_150951_riwwhh.png",
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685886088/Captura_de_pantalla_2023-06-04_103648_w8bpx8.png",
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685886089/Captura_de_pantalla_2023-06-04_103700_z6jyn6.png",
+        "https://res.cloudinary.com/dtfppvicy/image/upload/v1685886087/Captura_de_pantalla_2023-06-04_103718_zvn8y4.png",
       ],
     },
   ];
