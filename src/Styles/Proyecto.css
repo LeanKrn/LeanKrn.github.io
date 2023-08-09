@@ -7,7 +7,9 @@
 .ProyectDiv {
   display: flex;
   margin: 0 1rem;
+  gap: 2rem;
   justify-content: center;
+  flex-wrap: wrap;
   overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;

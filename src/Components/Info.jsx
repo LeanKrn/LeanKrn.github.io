@@ -15,7 +15,7 @@ export const Info = () => {
             perseverancia ,Estas 2 cosas me llevaron a superar desafíos y
             alcanzar los resultados de hoy en dia, No solo el hecho de formarme
             si no también crecer como persona, Salir de mi entorno de confort
-            para buscar una mejor salida en otro pías son de mis metas mas
+            para buscar una mejor salida en otro país son de mis metas mas
             enorgullecedoras, Además de al mismo tiempo formarme como
             programador FullStack para crecer dia a dia individualmente y en
             equipo

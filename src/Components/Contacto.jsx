@@ -1,4 +1,5 @@
 import "../Styles/Contacto.css";
+import { BsWhatsapp, BsLinkedin, BsGithub } from "react-icons/bs";
 
 export const Contacto = () => {
   return (
@@ -16,10 +17,21 @@ export const Contacto = () => {
             rel="noreferrer"
             style={{ color: "white", fontSize: "2.2rem", letterSpacing: "3px" }}
           >
-            Likedin
+            {/* Likedin */}
+            <BsLinkedin size={50} />
           </a>
         </div>
 
+        <div>
+          <a
+            href="https://github.com/LeanKrn"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "white", fontSize: "2.2rem", letterSpacing: "3px" }}
+          >
+            <BsGithub size={50} />
+          </a>
+        </div>
         <div>
           <a
             href="https://wa.me/+5522992282624"
@@ -27,7 +39,7 @@ export const Contacto = () => {
             rel="noreferrer"
             style={{ color: "white", fontSize: "2.2rem", letterSpacing: "3px" }}
           >
-            Whatsapp
+            <BsWhatsapp size={50} />
           </a>
         </div>
       </div>
