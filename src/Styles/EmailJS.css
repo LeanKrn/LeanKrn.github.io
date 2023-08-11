@@ -1,0 +1,75 @@
+form {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+  width: 60rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 45%;
+  /* max-width: 400px; */
+}
+
+.FormDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #222;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.InputDiv {
+  display: flex;
+}
+
+input[type="submit"] {
+  margin-right: auto;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    padding: 10px;
+    width: 80%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 95%;
+  }
+
+  input[type="submit"] {
+    padding: 8px 16px;
+  }
+}

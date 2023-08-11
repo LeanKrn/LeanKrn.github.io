@@ -1,5 +1,6 @@
 import "../Styles/Contacto.css";
 import { BsWhatsapp, BsLinkedin, BsGithub } from "react-icons/bs";
+import { ContactUs } from "./EmailJS";
 
 export const Contacto = ({ Lenguage }) => {
   const translations = {
@@ -11,6 +12,9 @@ export const Contacto = ({ Lenguage }) => {
     <div className="DivCont">
       <div style={{ margin: "auto" }}>
         <h3 className="h3Cont">{translations[Lenguage]}</h3>
+      </div>
+      <div>
+        <ContactUs Lenguage={Lenguage ? Lenguage : "es"} />
       </div>
       <div className="LinkCont">
         <div>

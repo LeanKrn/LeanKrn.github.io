@@ -1,6 +1,6 @@
 import "../Styles/Tecnologias.css";
 
-export const Tecnologias = () => {
+export const Tecnologias = ({ Lenguage }) => {
   const Tecno = [
     {
       name: "JavaScript",
@@ -43,10 +43,15 @@ export const Tecnologias = () => {
         "https://res.cloudinary.com/dtfppvicy/image/upload/v1685117383/MySQL_th2wzb.png",
     },
   ];
+  const selectIdioma = {
+    en: "Most Relevant Technologies",
+    es: "Tecnologías más relevantes",
+    pt: "Tecnologias mais relevantes",
+  };
 
   return (
     <div>
-      <h2 className="TecTitle">Tecnologias mas relevantes</h2>
+      <h2 className="TecTitle">{selectIdioma[Lenguage]}</h2>
       <div class="logos">
         <div class="logos-slide">
           {Tecno.map((Tec) => (

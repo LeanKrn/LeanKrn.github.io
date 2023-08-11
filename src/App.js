@@ -42,12 +42,14 @@ function App() {
   return (
     <div>
       <div
-        style={{
-          position: "absolute",
-          top: "10px",
-          right: "10px",
-          padding: "1rem",
-        }}
+        className="DivSelect"
+        // style={{
+        //   position: "absolute",
+        //   top: "10px",
+        //   right: "10px",
+        //   padding: "1rem",
+        //   color: "black",
+        // }}
       >
         <ReactFlagsSelect
           countries={["US", "PT", "ES"]}
@@ -56,6 +58,7 @@ function App() {
             PT: "PT",
             ES: "ES",
           }}
+          className="menu-flags"
           selected={browserLanguage}
           onSelect={(code) => setearIdiomas(code.toLowerCase())}
           placeholder={selectIdioma[browserLanguage]}
@@ -63,7 +66,7 @@ function App() {
       </div>
       <Home colors={colors} setColors={setColors} />
       <Info Lenguage={browserLanguage} colors={colors} />
-      <Tecnologias colors={colors} />
+      <Tecnologias Lenguage={browserLanguage} colors={colors} />
       <Proyectos Lenguage={browserLanguage} colors={colors} />
       <Contacto Lenguage={browserLanguage} colors={colors} />
     </div>

@@ -126,10 +126,28 @@ export const Proyectos = ({ Lenguage, colors }) => {
     setModalStates(updatedModalStates);
   };
 
+  const Proyect = {
+    en: "Projects",
+    es: "Proyectos",
+    pt: "Projetos",
+  };
+
+  const Info = {
+    en: "More Info",
+    es: "Más info",
+    pt: "Mais info",
+  };
+
+  const Repo = {
+    en: "Repository",
+    es: "Repositorio",
+    pt: "Repositório",
+  };
+
   // const { Meta } = Card;
   return (
     <div className="ProyectosMain">
-      <h2 className="ProyectTitle">Proyectos</h2>
+      <h2 className="ProyectTitle">{Proyect[Lenguage]}</h2>
       <div className="ProyectDiv">
         {info.map((card, index) => (
           <Card
@@ -167,7 +185,7 @@ export const Proyectos = ({ Lenguage, colors }) => {
                     }}
                     onClick={() => showModal(index)}
                   >
-                    Mas info
+                    {Info[Lenguage]}
                   </Button>
                   <Modal
                     title={card.Title}
@@ -232,7 +250,7 @@ export const Proyectos = ({ Lenguage, colors }) => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Repositorio {<FaLink />}
+                        {Repo[Lenguage]} {<FaLink />}
                       </a>
                     )}
                   </Modal>
