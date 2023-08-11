@@ -1,12 +1,13 @@
 .ProyectTitle {
-  margin: 0 2rem;
+  margin: 1rem 2rem;
   font-size: 3.5rem;
   letter-spacing: 1rem;
 }
 
 .ProyectDiv {
+  width: 80%;
   display: flex;
-  margin: 0 1rem;
+  margin: 1rem auto;
   gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;

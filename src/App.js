@@ -12,7 +12,7 @@ function App() {
   const [colors, setColors] = useState({
     Primario: "#f1f1f1",
     Secundario: "#808080",
-    Fondo: "#2f2f2f",
+    Fondo: "#222",
     FondoSecundario: "",
     apollo: "#ffff47",
   });
@@ -41,16 +41,7 @@ function App() {
 
   return (
     <div>
-      <div
-        className="DivSelect"
-        // style={{
-        //   position: "absolute",
-        //   top: "10px",
-        //   right: "10px",
-        //   padding: "1rem",
-        //   color: "black",
-        // }}
-      >
+      <div className="DivSelect">
         <ReactFlagsSelect
           countries={["US", "PT", "ES"]}
           customLabels={{

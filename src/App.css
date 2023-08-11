@@ -5,3 +5,8 @@
   margin: 1rem;
   color: black;
 }
+.menu-flags button {
+  color: aliceblue;
+  background-color: black;
+  border-color: aliceblue;
+}
