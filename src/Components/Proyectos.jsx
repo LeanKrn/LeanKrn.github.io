@@ -3,11 +3,13 @@ import { Card, Button, Modal } from "antd";
 import { useState } from "react";
 import { FaLink } from "react-icons/fa";
 
-export const Proyectos = ({ colors }) => {
+export const Proyectos = ({ Lenguage, colors }) => {
   const info = [
     {
       Title: "Calyaan",
-      Text: "Eccomerse de servicios de masajes a domicilio que abarca toda la zona de bogota,Colombia. Teniendo control de stock con horario y fecha, control de pagos a profesionales, Liquidacion a los profesionales que ofrecen sus servicios, Control de liquidaciones con sus respectivos servicios,Control de facturas, Cupones de descuento, Pasarelas de pago, Control de usuarios,Profesionales y Admin's ",
+      en: "Home massage service e-commerce that covers the entire area of Bogota, Colombia. Managing stock with schedule and date, payments control for professionals, Settlement for the professionals offering their services, Settlement management with their respective services, Invoice control, Discount coupons, Payment gateways, User management, Professionals and Admins",
+      es: "E-commerce de servicios de masajes a domicilio que abarca toda el área de Bogotá, Colombia. Gestión de stock con horario y fecha, control de pagos para profesionales, Liquidación para los profesionales que ofrecen sus servicios, Gestión de liquidaciones con sus respectivos servicios, Control de facturas, Cupones de descuento, Pasarelas de pago, Gestión de usuarios, Profesionales y Administradores",
+      pt: "E-commerce de serviços de massagem em casa que abrange toda a área de Bogotá, Colômbia. Gerenciamento de estoque com horário e data, controle de pagamentos para profissionais, Liquidação para os profissionais que oferecem seus serviços, Gerenciamento de liquidações com seus respectivos serviços, Controle de faturas, Cupons de desconto, Portais de pagamento, Gerenciamento de usuários, Profissionais e Administradores",
       Front: ["React", "Redux", "Tailwind", "Ant desing"],
       Back: [
         "NodeJS",
@@ -27,7 +29,11 @@ export const Proyectos = ({ colors }) => {
     },
     {
       Title: "Essencia lagos",
-      Text: "Web site creado para dar informacion de una empresa brasilera de turismo y a su vez dar informacion sobre la historia de donde se localiza",
+
+      en: "Website created to provide information about a Brazilian tourism company and also provide information about the history of its location",
+      es: "Sitio web creado para proporcionar información sobre una empresa brasileña de turismo y también brindar información sobre la historia de su ubicación",
+      pt: "Site criado para fornecer informações sobre uma empresa brasileira de turismo e também fornecer informações sobre a história de sua localização",
+
       Front: ["React native", "Style Components"],
       Demo: "https://essencialagos.com/",
       image: [
@@ -38,7 +44,9 @@ export const Proyectos = ({ colors }) => {
     },
     {
       Title: "Computer Store",
-      Text: "App diseñada y desarrollada sobre un eccomerse de componentes de tecnologia, Trabajo en grupo donde las tecnoligas implementadas mas interesantes son:Authenticacion, Busqueda, Filtros, Ordenamiento, Baneo de usuarios y publicaciones, Email de recuperacion de contraseña y Compra confirmada con el ticket del usuario, Rutas de administrador donde se controlan publicaciones y usuarios, Etc.",
+      en: "App designed and developed for an e-commerce of technology components. Group work where the most interesting implemented technologies are: Authentication, Search, Filters, Sorting, User and publication banning, Password recovery email, and Purchase confirmed with the user's ticket, Administrator routes where publications and users are controlled, etc.",
+      es: "Aplicación diseñada y desarrollada para un e-commerce de componentes de tecnología. Trabajo en grupo donde las tecnologías implementadas más interesantes son: Autenticación, Búsqueda, Filtros, Ordenamiento, Bloqueo de usuarios y publicaciones, Email de recuperación de contraseña, y Compra confirmada con el ticket del usuario, Rutas de administrador donde se controlan publicaciones y usuarios, etc.",
+      pt: "Aplicativo projetado e desenvolvido para um e-commerce de componentes de tecnologia. Trabalho em grupo onde as tecnologias implementadas mais interessantes são: Autenticação, Busca, Filtros, Ordenação, Bloqueio de usuários e publicações, Email de recuperação de senha e Compra confirmada com o ticket do usuário, Rotas de administrador onde são controladas publicações e usuários, etc.",
       Front: ["React", "Redux", "Style Components"],
       Back: ["NodeJS", "ExpressJS", "Cloudinary", "Mercado pago api", "Auth"],
       Database: ["PostgresSQL", "Sequelize"],
@@ -52,7 +60,9 @@ export const Proyectos = ({ colors }) => {
     },
     {
       Title: "Keran´s food",
-      Text: "App diseñada y desarrollada para dar informacion de recetas que incluye:Busqueda,Filtros,Ordenamientos,Base de datos, Consultas a una api externa etc. El front se compone de React,Redux y style components,",
+      en: "App designed and developed to provide information about recipes that includes: Search, Filters, Sorting, Database, Queries to an external API, etc. The frontend is composed of React, Redux, and styled components.",
+      es: "Aplicación diseñada y desarrollada para proporcionar información sobre recetas que incluye: Búsqueda, Filtros, Ordenamientos, Base de datos, Consultas a una API externa, etc. El frontend está compuesto por React, Redux y styled components.",
+      pt: "Aplicativo projetado e desenvolvido para fornecer informações sobre receitas que incluem: Busca, Filtros, Ordenação, Banco de dados, Consultas a uma API externa, etc. O frontend é composto por React, Redux e styled components.",
       Front: ["React", "Redux", "Style Components"],
       Back: ["NodeJS", "ExpressJS"],
       Database: ["PostgresSQL", "Sequelize"],
@@ -66,7 +76,9 @@ export const Proyectos = ({ colors }) => {
     },
     {
       Title: "Rick And Morty",
-      Text: "App diseñada y desarrollada para dar informacion en forma de cards sobre los personajes de rick and morty:Busqueda, Consultas a una api externa etc. El front se compone de React,Redux y style components",
+      en: "App designed and developed to provide information in the form of cards about the characters from Rick and Morty: Search, Queries to an external API, etc. The frontend is composed of React, Redux, and styled components.",
+      es: "Aplicación diseñada y desarrollada para proporcionar información en forma de tarjetas sobre los personajes de Rick y Morty: Búsqueda, Consultas a una API externa, etc. El frontend está compuesto por React, Redux y styled components.",
+      pt: "Aplicativo projetado e desenvolvido para fornecer informações em forma de cartões sobre os personagens de Rick and Morty: Busca, Consultas a uma API externa, etc. O frontend é composto por React, Redux e styled components.",
       Front: ["React", "Redux", "Style Components"],
 
       Repository: "",
@@ -80,7 +92,9 @@ export const Proyectos = ({ colors }) => {
 
     {
       Title: "Pokedex Mobile",
-      Text: "App de react native diseñada para mostrar informacion sobre pokemones,donde lo mas interesante es la Authenticacion,Guardado de favoritos y paginado infinito",
+      en: "React Native app designed to display information about Pokémon, where the most interesting features are Authentication, Favorites saving, and infinite scrolling.",
+      es: "Aplicación de React Native diseñada para mostrar información sobre Pokémon, donde las características más interesantes son la Autenticación, el Guardado de favoritos y el desplazamiento infinito.",
+      pt: "Aplicativo React Native projetado para exibir informações sobre Pokémon, onde os recursos mais interessantes são Autenticação, Salvar favoritos e rolagem infinita.",
       Front: ["React native", "Redux", "Style Components"],
       Repository: "https://github.com/LeanKrn/PokedexKRN",
       Demo: "",
@@ -162,7 +176,7 @@ export const Proyectos = ({ colors }) => {
                     onCancel={() => handleCancel(index)}
                   >
                     <hr></hr>
-                    <p>{card.Text}</p>
+                    <p>{card[Lenguage]}</p>
                     <hr></hr>
                     <div
                       style={{

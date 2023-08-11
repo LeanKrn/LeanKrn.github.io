@@ -1,13 +1,16 @@
 import "../Styles/Contacto.css";
 import { BsWhatsapp, BsLinkedin, BsGithub } from "react-icons/bs";
 
-export const Contacto = () => {
+export const Contacto = ({ Lenguage }) => {
+  const translations = {
+    es: "No dudes en contactarme ante cualquier duda o recomendación",
+    en: "Feel free to contact me with any questions or recommendations",
+    pt: "Não hesite em entrar em contato comigo se tiver alguma dúvida ou recomendação",
+  };
   return (
     <div className="DivCont">
       <div style={{ margin: "auto" }}>
-        <h3 className="h3Cont">
-          No dudes en contactarme ante cualquier duda o Recomendacion
-        </h3>
+        <h3 className="h3Cont">{translations[Lenguage]}</h3>
       </div>
       <div className="LinkCont">
         <div>
