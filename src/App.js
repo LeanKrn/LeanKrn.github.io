@@ -6,6 +6,7 @@ import { Proyectos } from "./Components/Proyectos";
 import { Contacto } from "./Components/Contacto";
 import { Tecnologias } from "./Components/Tecnologias";
 import ReactFlagsSelect from "react-flags-select";
+import { Toaster } from "sonner";
 
 function App() {
   const [browserLanguage, setBrowserLanguage] = useState("");
@@ -42,6 +43,7 @@ function App() {
   return (
     <div>
       <div className="DivSelect">
+        <Toaster richColors position="bottom-right" />
         <ReactFlagsSelect
           countries={["US", "PT", "ES"]}
           customLabels={{

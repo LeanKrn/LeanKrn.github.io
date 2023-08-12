@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "../Styles/EmailJS.css";
 import emailjs from "@emailjs/browser";
-import Swal from "sweetalert2";
+import { toast } from "sonner";
 
 const validateEmail = (email) => {
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -40,67 +40,65 @@ const input = {
   pt: "Enviar",
 };
 
-const Toast = Swal.mixin({
-  toast: true,
-  position: "top-end",
-  showConfirmButton: false,
-  timer: 3000,
-  timerProgressBar: true,
-  didOpen: (toast) => {
-    toast.addEventListener("mouseenter", Swal.stopTimer);
-    toast.addEventListener("mouseleave", Swal.resumeTimer);
-  },
-});
+const loadingText = {
+  en: "Sending...",
+  es: "Enviando...",
+  pt: "Enviando...",
+};
 
 export const ContactUs = ({ Lenguage }) => {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    const nameInput = form.current.querySelector('input[name="user_name"]');
-    const emailInput = form.current.querySelector('input[name="user_email"]');
-    const messageInput = form.current.querySelector('textarea[name="message"]');
-
-    const nameValue = nameInput.value.trim();
-    const emailValue = emailInput.value.trim();
-    const messageValue = messageInput.value.trim();
-
-    if (nameValue === "" || emailValue === "" || messageValue === "") {
-      console.log("Campos vacíos");
-      return Toast.fire({
-        icon: "Error",
-        title: incompleteFieldsMessage[Lenguage],
-      });
-    }
-
-    if (!validateEmail(emailValue)) {
-      console.log("Correo electrónico inválido");
-      return Toast.fire({
-        icon: "Error",
-        title: errorMessages[Lenguage],
-      });
-    }
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_KEY,
-        process.env.REACT_APP_TEMPLATE_KEY,
-        form.current,
-        process.env.REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          Toast.fire({
-            icon: "success",
-            title: signInMessage[Lenguage],
-          });
-        },
-        () => {
-          Toast.fire({
-            icon: "Error",
-            title: errorMessages[Lenguage],
-          });
-        }
+  const promise = () =>
+    new Promise((resolve, reject) => {
+      const nameInput = form.current.querySelector('input[name="user_name"]');
+      const emailInput = form.current.querySelector('input[name="user_email"]');
+      const messageInput = form.current.querySelector(
+        'textarea[name="message"]'
       );
+      const nameValue = nameInput.value.trim();
+      const emailValue = emailInput.value.trim();
+      const messageValue = messageInput.value.trim();
+      console.log(nameValue, emailValue, messageValue, "xd");
+      if (nameValue === "" || emailValue === "" || messageValue === "") {
+        console.log("Campos vacíos");
+        return reject(incompleteFieldsMessage[Lenguage]);
+      }
+
+      if (!validateEmail(emailValue)) {
+        console.log("Correo electrónico inválido");
+        return reject(errorMessages[Lenguage]);
+      }
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_SERVICE_KEY,
+          process.env.REACT_APP_TEMPLATE_KEY,
+          form.current,
+          process.env.REACT_APP_PUBLIC_KEY
+        )
+        .then(
+          () => {
+            resolve("Success");
+          },
+          () => {
+            reject("Error");
+          }
+        );
+    });
+
+  const sendEmail = (event) => {
+    event.preventDefault();
+
+    toast.promise(promise, {
+      loading: loadingText[Lenguage],
+      success: () => {
+        form.current.reset();
+        return signInMessage[Lenguage];
+      },
+      error: (errorMessage) => {
+        return errorMessage;
+      },
+    });
   };
 
   return (
