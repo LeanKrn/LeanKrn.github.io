@@ -59,14 +59,12 @@ export const ContactUs = ({ Lenguage }) => {
       const nameValue = nameInput.value.trim();
       const emailValue = emailInput.value.trim();
       const messageValue = messageInput.value.trim();
-      console.log(nameValue, emailValue, messageValue, "xd");
+
       if (nameValue === "" || emailValue === "" || messageValue === "") {
-        console.log("Campos vacíos");
         return reject(incompleteFieldsMessage[Lenguage]);
       }
 
       if (!validateEmail(emailValue)) {
-        console.log("Correo electrónico inválido");
         return reject(errorMessages[Lenguage]);
       }
       emailjs
